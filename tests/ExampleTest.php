@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Robbin\EloquentValueObjects\Tests;
 
 class ExampleTest extends TestCase
 {
