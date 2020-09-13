@@ -91,4 +91,3 @@ class Caster implements CastsAttributes
         return static::$cache[$this->class][$key];
     }
 }
-

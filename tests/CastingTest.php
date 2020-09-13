@@ -29,5 +29,4 @@ class CastingTest extends TestCase
 
         $model->name = 'A string longer than twenty characters';
     }
-
 }
