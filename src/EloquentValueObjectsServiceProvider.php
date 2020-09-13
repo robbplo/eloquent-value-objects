@@ -3,7 +3,6 @@
 namespace Robbin\EloquentValueObjects;
 
 use Illuminate\Support\ServiceProvider;
-use Robbin\EloquentValueObjects\Commands\EloquentValueObjectsCommand;
 
 class EloquentValueObjectsServiceProvider extends ServiceProvider
 {
@@ -24,10 +23,6 @@ class EloquentValueObjectsServiceProvider extends ServiceProvider
                     __DIR__ . "/../database/migrations/{$migrationFileName}.stub" => database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName),
                 ], 'migrations');
             }
-
-            $this->commands([
-                EloquentValueObjectsCommand::class,
-            ]);
         }
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'eloquent-value-objects');
